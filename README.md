@@ -15,36 +15,37 @@ The camp will cover:
 
 The focus of the camp is on research, datasets, and language from the large umbrella of work done at the College of Communication Arts and Sciences. However, the camp is open to all members of the MSU community, and it is very easy to incorporate the skills and tools we teach into a broad range of disciplines. We encourage any interested individuals to attend, it is an open and welcoming event.
 
-Registration is open from the QR code or link below.
+## Registration 
+Individuals are able to register with the QR code or link below. the camp is free, but registration is necessary to a) help us ensure we have a room large enough for us and b) give you access to the files needed to participate.
 
  <img width="150" alt="image" src="https://user-images.githubusercontent.com/35567742/234681689-d7a5f808-6379-4b23-a124-6be4bee71e24.png">
 
 https://forms.gle/89Q3Jv9RYLUvE3Xo7
 
 
-### Instructors: 
+## Instructors: 
 
 Dr. Dan Hiaeshutter - Rice (Advertising and Public Relations)
 
 Graduate Assistant: TBD
 
-### Requirements: 
+## Requirements: 
 Participants must bring a laptop and are encouraged to try installing the necessary packages before camp. Installation support will be provided during camp, and online alternatives will be available as well.
 
-#### Python
+### Python
 Python is a popular programming language used in a variety of different fields and uses. There are a number of different ways to get Python onto your computer, but we recommend downloading Anaconda (which is free): https://www.anaconda.com/
 
-#### Jupyter Labs
+### Jupyter Labs
 Jupyter Labs is a graphic user interface for programming languages including Python. It allows you to create scripts that can be shared and easily understood. Jupyter Labs comes with Anaconda, so you will not need another software download if you use Anaconda.
 
-#### R
+### R
 R is a programming language used for data management, statistical analysis, and data visualization. It is a free software and is available here at https://www.r-project.org/. There are various CRAN mirrors that host the latest R download, just pick whichever one appeals to you and download the appropriate version for your computer.
 
-#### RStudio
+### RStudio
 RStudio is a free software that uses R in a more appealing and easy to understand format. It does not perform any operations on its own, which is why you also need R, but RStudio makes the experience of using R much easier. It is available here: https://posit.co/products/open-source/rstudio/
 
 
-## Schedule
+## Schedule:
 
 <table class="table table-striped">
   <tr> <td>Monday, June 12</td>  <td>9:30</td>   <td>Introduction to the Camp </td> </tr>
@@ -68,13 +69,13 @@ RStudio is a free software that uses R in a more appealing and easy to understan
   <tr> <td></td>       <td>2:30</td>   <td>Camp Ends</td> </tr>
  
   <tr> <td>Wednesday, June 14</td><td>9:30</td>   <td>Previous day recap</td> </tr>
-  <tr> <td></td>       <td>10:00</td>   <td>Webscraping with Python</td> </tr>
+  <tr> <td></td>       <td>10:00</td>   <td>R Basics</td> </tr>
   <tr> <td></td>       <td>11:00</td>   <td>Break </td> </tr>
-  <tr> <td></td>       <td>11:10</td>   <td>Webscraping with Python </td> </tr> 
+  <tr> <td></td>       <td>11:10</td>   <td>R Basics</td> </tr> 
   <tr> <td></td>       <td>12:00</td>   <td>Lunch </td> </tr>
-  <tr> <td></td>       <td>12:30</td>   <td>Python APIs</td> </tr>
+  <tr> <td></td>       <td>12:30</td>   <td>Data Analysis with R</td> </tr>
   <tr> <td></td>       <td>1:30</td>   <td>Break</td> </tr>
-  <tr> <td></td>       <td>1:40</td>   <td>Python APIs</td> </tr>
+  <tr> <td></td>       <td>1:40</td>   <td>Data Analysis with R</td> </tr>
   <tr> <td></td>       <td>2:30</td>   <td>Camp Ends</td> </tr>
    
   <tr> <td>Thursday, June 15</td><td>9:30</td>   <td>Previous day recap</td> </tr>
