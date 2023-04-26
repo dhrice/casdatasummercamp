@@ -32,16 +32,16 @@ Graduate Assistant: TBD
 Participants must bring a laptop and are encouraged to try installing the necessary packages before camp. Installation support will be provided during camp, and online alternatives will be available as well.
 
 #### Python
-asdf
+Python is a popular programming language used in a variety of different fields and uses. There are a number of different ways to get Python onto your computer, but we recommend downloading Anaconda (which is free): https://www.anaconda.com/
 
 #### Jupyter Labs
-asdf
+Jupyter Labs is a graphic user interface for programming languages including Python. It allows you to create scripts that can be shared and easily understood. Jupyter Labs comes with Anaconda, so you will not need another software download if you use Anaconda.
 
 #### R
-adsf
+R is a programming language used for data management, statistical analysis, and data visualization. It is a free software and is available here at https://www.r-project.org/. There are various CRAN mirrors that host the latest R download, just pick whichever one appeals to you and download the appropriate version for your computer.
 
 #### RStudio
-asdf
+RStudio is a free software that uses R in a more appealing and easy to understand format. It does not perform any operations on its own, which is why you also need R, but RStudio makes the experience of using R much easier. It is available here: https://posit.co/products/open-source/rstudio/
 
 
 <h2>Schedule</h2>
