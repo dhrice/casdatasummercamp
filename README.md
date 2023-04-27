@@ -10,12 +10,17 @@ The camp will cover:
 -	R
 -	Web scraping
 -	API interaction
--	Big data
+-	Big data and machine learning
 -	Data cleaning and analysis
 
 The focus of the camp is on research, datasets, and language from the large umbrella of work done at the College of Communication Arts and Sciences. However, the camp is open to all members of the MSU community, and it is very easy to incorporate the skills and tools we teach into a broad range of disciplines. We encourage any interested individuals to attend, it is an open and welcoming event.
 
-## Registration 
+
+## Format:
+The camp will be offered in-person and synchronously online. 
+
+
+## Registration: 
 Individuals are able to register with the QR code or link below. the camp is free, but registration is necessary to a) help us ensure we have a room large enough for us and b) give you access to the files needed to participate.
 
  <img width="150" alt="image" src="https://user-images.githubusercontent.com/35567742/234681689-d7a5f808-6379-4b23-a124-6be4bee71e24.png">
@@ -79,19 +84,19 @@ RStudio is a free software that uses R in a more appealing and easy to understan
   <tr> <td></td>       <td>2:30</td>   <td>Camp Ends</td> </tr>
    
   <tr> <td>Thursday, June 15</td><td>9:30</td>   <td>Previous day recap</td> </tr>
-  <tr> <td></td>       <td>10:00</td>   <td>Webscraping with Python</td> </tr>
+  <tr> <td></td>       <td>10:00</td>   <td>Data Visualization with R</td> </tr>
   <tr> <td></td>       <td>11:00</td>   <td>Break </td> </tr>
-  <tr> <td></td>       <td>11:10</td>   <td>Webscraping with Python </td> </tr> 
+  <tr> <td></td>       <td>11:10</td>   <td>Machine Learning with R</td> </tr> 
   <tr> <td></td>       <td>12:00</td>   <td>Lunch </td> </tr>
-  <tr> <td></td>       <td>12:30</td>   <td>Python APIs</td> </tr>
+  <tr> <td></td>       <td>12:30</td>   <td>Machine Learning with R</td> </tr>
   <tr> <td></td>       <td>1:30</td>   <td>Break</td> </tr>
-  <tr> <td></td>       <td>1:40</td>   <td>Python APIs</td> </tr>
+  <tr> <td></td>       <td>1:40</td>   <td>Machine Learning in Python</td> </tr>
   <tr> <td></td>       <td>2:30</td>   <td>Camp Ends</td> </tr>
  
   <tr> <td>Friday, June 16</td><td>9:30</td>   <td>Previous day recap</td> </tr>
-  <tr> <td></td>       <td>10:00</td>   <td>Big Data </td> </tr>
+  <tr> <td></td>       <td>10:00</td>   <td>Big Data</td> </tr>
   <tr> <td></td>       <td>11:00</td>   <td>Break </td> </tr>
-  <tr> <td></td>       <td>11:10</td>   <td>Webscraping with Python </td> </tr> 
+  <tr> <td></td>       <td>11:10</td>   <td></td> </tr> 
   <tr> <td></td>       <td>12:00</td>   <td>Lunch </td> </tr>
   <tr> <td></td>       <td>12:30</td>   <td>Individual/Group Project Work</td> </tr>
   <tr> <td></td>       <td>1:30</td>   <td>Break</td> </tr>
