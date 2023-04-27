@@ -17,7 +17,7 @@ The focus of the camp is on research, datasets, and language from the large umbr
 
 
 ## Format:
-The camp will be offered in-person and synchronously online. 
+The camp will be offered in-person and synchronously online. The online component will be run through Zoom. Scripts and files will be made available on this repo (webpage) before the start of teh camp. Location is TBD until we know how much space we will need.
 
 
 ## Registration: 
@@ -47,7 +47,7 @@ Jupyter Labs is a graphic user interface for programming languages including Pyt
 R is a programming language used for data management, statistical analysis, and data visualization. It is a free software and is available here at https://www.r-project.org/. There are various CRAN mirrors that host the latest R download, just pick whichever one appeals to you and download the appropriate version for your computer.
 
 ### RStudio
-RStudio is a free software that uses R in a more appealing and easy to understand format. It does not perform any operations on its own, which is why you also need R, but RStudio makes the experience of using R much easier. It is available here: https://posit.co/products/open-source/rstudio/
+RStudio is a free software that uses R in a more appealing and easier to understand format. It does not perform any operations on its own, which is why you also need R, but RStudio makes the experience of using R much easier. It is available here: https://posit.co/products/open-source/rstudio/
 
 
 ## Schedule:
