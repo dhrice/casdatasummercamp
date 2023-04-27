@@ -96,7 +96,7 @@ RStudio is a free software that uses R in a more appealing and easier to underst
   <tr> <td>Friday, June 16</td><td>9:30</td>   <td>Previous day recap</td> </tr>
   <tr> <td></td>       <td>10:00</td>   <td>Big Data</td> </tr>
   <tr> <td></td>       <td>11:00</td>   <td>Break </td> </tr>
-  <tr> <td></td>       <td>11:10</td>   <td></td> </tr> 
+  <tr> <td></td>       <td>11:10</td>   <td>Big Data at MSU</td> </tr> 
   <tr> <td></td>       <td>12:00</td>   <td>Lunch </td> </tr>
   <tr> <td></td>       <td>12:30</td>   <td>Individual/Group Project Work</td> </tr>
   <tr> <td></td>       <td>1:30</td>   <td>Break</td> </tr>
