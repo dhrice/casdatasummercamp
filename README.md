@@ -17,7 +17,7 @@ The focus of the camp is on research, datasets, and language from the large umbr
 
 
 ## Format:
-The camp will be offered in-person and synchronously online. The online component will be run through Zoom. Scripts and files will be made available on this repo (webpage) before the start of teh camp. Location is TBD until we know how much space we will need.
+The camp will be offered in-person and synchronously online. The online component will be run through Zoom. Scripts and files will be made available on this repo (webpage) before the start of teh camp. Location is TBD until we know how much space we will need. The camp is scheduled for June 12th through the 16th and will run from 9:30am until 2:30pm.
 
 
 ## Registration: 
