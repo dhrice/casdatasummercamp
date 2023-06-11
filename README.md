@@ -32,7 +32,7 @@ https://forms.gle/89Q3Jv9RYLUvE3Xo7
 
 Dr. Dan Hiaeshutter - Rice (Advertising and Public Relations)
 
-Graduate Assistant: TBD
+Graduate Assistant: Seema Bezbaruah
 
 ## Requirements: 
 Participants must bring a laptop and are encouraged to try installing the necessary packages before camp. Installation support will be provided during camp, and online alternatives will be available as well.
@@ -53,7 +53,8 @@ RStudio is a free software that uses R in a more appealing and easier to underst
 ## Schedule:
 
 <table class="table table-striped">
-  <tr> <td>Monday, June 12</td>  <td>9:30</td>   <td>Introduction to the Camp </td> </tr>
+  <tr> <td>Monday, June 12</td>  <td>9:30</td>   <td>Introduction to the Camp </td> <td> Day One Files[casdsc.DAYONEFILES.zip](https://github.com/dhrice/casdatasummercamp/files/11715677/casdsc.DAYONEFILES.zip)
+</td></tr>
   <tr> <td></td>        <td>9:45</td>   <td>Jupyter and Python Basics </td> </tr>
   <tr> <td></td>        <td>10:30</td>   <td>Break</td> </tr>
   <tr> <td></td>        <td>10:40</td>   <td>Python Basics </td> </tr>
