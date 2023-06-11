@@ -53,7 +53,7 @@ RStudio is a free software that uses R in a more appealing and easier to underst
 ## Schedule:
 
 <table class="table table-striped">
-  <tr> <td>Monday, June 12</td>  <td>9:30</td>   <td>Introduction to the Camp </td> <td> Day One Files[casdsc.DAYONEFILES.zip](https://github.com/dhrice/casdatasummercamp/files/11715677/casdsc.DAYONEFILES.zip)
+  <tr> <td>Monday, June 12</td>  <td>9:30</td>   <td>Introduction to the Camp </td> <td> Day One Files [casdsc.DAYONEFILES.zip](https://github.com/dhrice/casdatasummercamp/files/11715680/casdsc.DAYONEFILES.zip)
 </td></tr>
   <tr> <td></td>        <td>9:45</td>   <td>Jupyter and Python Basics </td> </tr>
   <tr> <td></td>        <td>10:30</td>   <td>Break</td> </tr>
