@@ -55,7 +55,7 @@ RStudio is a free software that uses R in a more appealing and easier to underst
 <table class="table table-striped">
   <tr> <td>Monday, June 12</td>  <td>9:30</td>   <td>Introduction to the Camp </td> <td> Day One Files [casdsc.DAYONEFILES.zip](https://github.com/dhrice/casdatasummercamp/files/11715680/casdsc.DAYONEFILES.zip)
 </td></tr>
-  <tr> <td></td>        <td>9:45</td>   <td>Jupyter and Python Basics </td> </tr>
+  <tr> <td></td>        <td>9:45</td>   <td>Jupyter and Python Basics </td> <td> Day One Recording https://mediaspace.msu.edu/media/t/1_83j8bg1q </td> </tr>
   <tr> <td></td>        <td>10:30</td>   <td>Break</td> </tr>
   <tr> <td></td>        <td>10:40</td>   <td>Python Basics </td> </tr>
   <tr> <td></td>        <td>12:00</td>   <td>Lunch</td> </tr>
@@ -64,7 +64,7 @@ RStudio is a free software that uses R in a more appealing and easier to underst
   <tr> <td></td>       <td>1:40</td>    <td>Python Data Analysis </td> </tr>
   <tr> <td></td>       <td>2:30</td>    <td>Camp Ends</td> </tr> 
 
-  <tr> <td>Tuesday, June 13</td><td>9:30</td>   <td>Previous day recap</td> </tr>
+  <tr> <td>Tuesday, June 13</td><td>9:30</td>   <td>Previous day recap</td> <td> Day Two Files: </tr>
   <tr> <td></td>       <td>10:00</td>   <td>Webscraping with Python</td> </tr>
   <tr> <td></td>       <td>11:00</td>   <td>Break </td> </tr>
   <tr> <td></td>       <td>11:10</td>   <td>Webscraping with Python </td> </tr> 
