@@ -88,7 +88,7 @@ RStudio is a free software that uses R in a more appealing and easier to underst
    
   <tr> <td>Thursday, June 15</td><td>9:30</td>   <td>Previous day recap</td> <td> Day Four Files: [casdsc.DAYFOURFILES.zip](https://github.com/dhrice/casdatasummercamp/files/11757671/casdsc.DAYFOURFILES.zip)
 </td></tr>
-  <tr> <td></td>       <td>10:00</td>   <td>Data Visualization with R</td> </tr>
+  <tr> <td></td>       <td>10:00</td>   <td>Data Visualization with R</td><td>Day Four Recording: https://mediaspace.msu.edu/media/t/1_613jznte</td> </tr>
   <tr> <td></td>       <td>11:00</td>   <td>Break </td> </tr>
   <tr> <td></td>       <td>11:10</td>   <td>Machine Learning with R</td> </tr> 
   <tr> <td></td>       <td>12:00</td>   <td>Lunch </td> </tr>
