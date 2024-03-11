@@ -34,7 +34,7 @@ Individuals are able to register with the QR code or link below. the camp is fre
 
 Dr. Dan Hiaeshutter - Rice (Advertising and Public Relations)
 
-Graduate Assistant: Seema Bezbaruah
+Graduate Assistant: TBD
 
 ## Requirements: 
 Participants must bring a laptop and are encouraged to try installing the necessary packages before camp. Installation support will be provided during camp, and online alternatives will be available as well.
