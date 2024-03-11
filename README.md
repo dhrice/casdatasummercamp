@@ -55,9 +55,8 @@ RStudio is a free software that uses R in a more appealing and easier to underst
 ## Schedule:
 
 <table class="table table-striped">
-  <tr> <td>Monday, June 12</td>  <td>9:30</td>   <td>Introduction to the Camp </td> <td> Day One Files [casdsc.DAYONEFILES.zip](https://github.com/dhrice/casdatasummercamp/files/11715680/casdsc.DAYONEFILES.zip)
-</td></tr>
-  <tr> <td></td>        <td>9:45</td>   <td>Jupyter and Python Basics </td> <td> Day One Recording https://mediaspace.msu.edu/media/t/1_83j8bg1q </td> </tr>
+  <tr> <td>Monday, June 12</td>  <td>9:30</td>   <td>Introduction to the Camp </td> </tr>
+  <tr> <td></td>        <td>9:45</td>   <td>Jupyter and Python Basics </td> </tr>
   <tr> <td></td>        <td>10:30</td>   <td>Break</td> </tr>
   <tr> <td></td>        <td>10:40</td>   <td>Python Basics </td> </tr>
   <tr> <td></td>        <td>12:00</td>   <td>Lunch</td> </tr>
@@ -66,9 +65,8 @@ RStudio is a free software that uses R in a more appealing and easier to underst
   <tr> <td></td>       <td>1:40</td>    <td>Python Data Analysis </td> </tr>
   <tr> <td></td>       <td>2:30</td>    <td>Camp Ends</td> </tr> 
 
-  <tr> <td>Tuesday, June 13</td><td>9:30</td>   <td>Previous day recap</td> <td> Day Two Files:[casdsc.DAYTWOFILES.zip](https://github.com/dhrice/casdatasummercamp/files/11735132/casdsc.DAYTWOFILES.zip)
- </tr>
-  <tr> <td></td>       <td>10:00</td>   <td>Webscraping with Python</td> <td> Day Two Recording: https://mediaspace.msu.edu/media/t/1_jvh8n5cq </td></tr>
+  <tr> <td>Tuesday, June 13</td><td>9:30</td>   <td>Previous day recap</td> </tr>
+  <tr> <td></td>       <td>10:00</td>   <td>Webscraping with Python</td> </tr>
   <tr> <td></td>       <td>11:00</td>   <td>Break </td> </tr>
   <tr> <td></td>       <td>11:10</td>   <td>Webscraping with Python </td> </tr> 
   <tr> <td></td>       <td>12:00</td>   <td>Lunch </td> </tr>
@@ -77,9 +75,8 @@ RStudio is a free software that uses R in a more appealing and easier to underst
   <tr> <td></td>       <td>1:40</td>   <td>Python APIs</td> </tr>
   <tr> <td></td>       <td>2:30</td>   <td>Camp Ends</td> </tr>
  
-  <tr> <td>Wednesday, June 14</td><td>9:30</td>   <td>Previous day recap</td> <td> Day Three Files: [casdsc.DAYTHREEFILES.zip](https://github.com/dhrice/casdatasummercamp/files/11745868/casdsc.DAYTHREEFILES.zip) </td>
-</tr>
-  <tr> <td></td>       <td>10:00</td>   <td>R Basics</td> <td> Day Three Recording: https://mediaspace.msu.edu/media/CAS+Data+Summer+Camp+/1_p5385j2u</td> </tr>
+  <tr> <td>Wednesday, June 14</td><td>9:30</td>   <td>Previous day recap</td> </tr>
+  <tr> <td></td>       <td>10:00</td>   <td>R Basics</td> <</tr>
   <tr> <td></td>       <td>11:00</td>   <td>Break </td> </tr>
   <tr> <td></td>       <td>11:10</td>   <td>R Basics</td> </tr> 
   <tr> <td></td>       <td>12:00</td>   <td>Lunch </td> </tr>
@@ -88,9 +85,8 @@ RStudio is a free software that uses R in a more appealing and easier to underst
   <tr> <td></td>       <td>1:40</td>   <td>Data Analysis with R</td> </tr>
   <tr> <td></td>       <td>2:30</td>   <td>Camp Ends</td> </tr>
    
-  <tr> <td>Thursday, June 15</td><td>9:30</td>   <td>Previous day recap</td> <td> Day Four Files: [casdsc.DAYFOURFILES.zip](https://github.com/dhrice/casdatasummercamp/files/11757671/casdsc.DAYFOURFILES.zip)
-</td></tr>
-  <tr> <td></td>       <td>10:00</td>   <td>Data Visualization with R</td><td>Day Four Recording: https://mediaspace.msu.edu/media/t/1_613jznte</td> </tr>
+  <tr> <td>Thursday, June 15</td><td>9:30</td>   <td>Previous day recap</td> </tr>
+  <tr> <td></td>       <td>10:00</td>   <td>Data Visualization with R</td> </tr>
   <tr> <td></td>       <td>11:00</td>   <td>Break </td> </tr>
   <tr> <td></td>       <td>11:10</td>   <td>Machine Learning with R</td> </tr> 
   <tr> <td></td>       <td>12:00</td>   <td>Lunch </td> </tr>
@@ -99,8 +95,7 @@ RStudio is a free software that uses R in a more appealing and easier to underst
   <tr> <td></td>       <td>1:40</td>   <td>Machine Learning in Python</td> </tr>
   <tr> <td></td>       <td>2:30</td>   <td>Camp Ends</td> </tr>
  
-  <tr> <td>Friday, June 16</td><td>9:30</td>   <td>Previous day recap</td><td>Day Five Files:[casdsc.DAYFIVEFILES.zip](https://github.com/dhrice/casdatasummercamp/files/11770549/casdsc.DAYFIVEFILES.zip)
- </td> </tr>
+  <tr> <td>Friday, June 16</td><td>9:30</td>   <td>Previous day recap</td></tr>
   <tr> <td></td>       <td>10:00</td>   <td>Big Data</td> </tr>
   <tr> <td></td>       <td>11:00</td>   <td>Break </td> </tr>
   <tr> <td></td>       <td>11:10</td>   <td>Big Data at MSU</td> </tr> 
