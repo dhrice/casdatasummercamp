@@ -1,7 +1,7 @@
 # Communication Arts and Sciences' Data Summer Camp
 
 ## General Information
-Big data, computational social science, programming, and machine learning are increasingly important and topical components of social science research. While all of these play a role in helping us understand a deeply digitally connected world, the skills necessary to work with them are not widely held. The College of Communication Arts and Sciences is offering a free week-long summer camp that is specifically built to make these tools accessible to a broad audience.
+Big data, computational social science, programming, and machine learning are increasingly important and topical components of social science research. While all of these play a role in helping us understand a deeply digitally connected world, the skills necessary to work with them are not widely held. The College of Communication Arts and Sciences is offering a free summer camp that is specifically built to make these tools accessible to a broad audience.
 
 This summer camp is designed to give students, faculty, and staff hand-on knowledge of computational and programming tools. The camp is targeted towards those with little to no background in these areas. While people with strong coding skills may still benefit from the specific topics that we cover, we approach the camp from the perspective of those who know little to nothing. 
 
