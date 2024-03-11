@@ -23,9 +23,7 @@ The camp will be offered in-person and synchronously online. The online componen
 ## Registration: 
 Individuals are able to register with the QR code or link below. the camp is free, but registration is necessary to a) help us ensure we have a room large enough for us and b) give you access to the files needed to participate.
 
-
-![Untitled 1](https://github.com/dhrice/casdatasummercamp/assets/35567742/9b92348f-3e91-42e9-a540-e741ed8583e0)
-
+![Untitled 1](https://github.com/dhrice/casdatasummercamp/assets/35567742/e0f16e87-5c87-48a7-bcec-ef5dcef41368)
 
 
 [https://forms.gle/89Q3Jv9RYLUvE3Xo7](https://forms.gle/pYG9mgJZyKDPHQET8)
