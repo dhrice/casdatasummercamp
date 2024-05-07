@@ -17,7 +17,7 @@ The focus of the camp is on research, datasets, and language from the large umbr
 
 
 ## Format:
-The camp will be offered in-person and synchronously online. The online component will be run through Zoom. Scripts and files will be made available on this repo (webpage) before the start of teh camp. Location is TBD until we know how much space we will need. The camp is scheduled for two different weeks, May 8, 9, and 10 and May 29, 30 and 31. Each day the camp will run from 9:30am until 2:30pm.
+The camp will be offered in-person and synchronously online. The online component will be run through Zoom. Scripts and files will be made available on this repo (webpage) before the start of the camp. Location is CAS 233. The camp is scheduled for two different weeks, May 8, 9, and 10 and May 29, 30 and 31. Each day the camp will run from 9:30am until 2:30pm.
 
 
 ## Registration: 
@@ -34,7 +34,7 @@ Individuals are able to register with the QR code or link below. the camp is fre
 
 Dr. Dan Hiaeshutter - Rice (Advertising and Public Relations)
 
-Graduate Assistant: TBD
+Graduate Assistant: Nan Zhang (Information and Media)
 
 ## Requirements: 
 Participants must bring a laptop and are encouraged to try installing the necessary packages before camp. Installation support will be provided during camp, and online alternatives will be available as well.
