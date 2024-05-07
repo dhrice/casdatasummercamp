@@ -17,7 +17,7 @@ The focus of the camp is on research, datasets, and language from the large umbr
 
 
 ## Format:
-The camp will be offered in-person and synchronously online. The online component will be run through Zoom. Scripts and files will be made available on this repo (webpage) before the start of the camp. Location is CAS 233. The camp is scheduled for two different weeks, May 8, 9, and 10 and May 29, 30 and 31. Each day the camp will run from 9:30am until 2:30pm.
+The camp will be offered in-person and synchronously online. The online component will be run through Zoom. Scripts and files will be made available on this repo (webpage) before the start of the camp. Location is CAS 233 or on Zoom: https://msu.zoom.us/j/99575033616. The camp is scheduled for two different weeks, May 8, 9, and 10 and May 29, 30 and 31. Each day the camp will run from 9:30am until 2:30pm.
 
 
 ## Registration: 
