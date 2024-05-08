@@ -51,6 +51,15 @@ R is a programming language used for data management, statistical analysis, and 
 ### RStudio
 RStudio is a free software that uses R in a more appealing and easier to understand format. It does not perform any operations on its own, which is why you also need R, but RStudio makes the experience of using R much easier. It is available here: https://posit.co/products/open-source/rstudio/
 
+## Recordings
+Session One 
+Day One (Part One): https://mediaspace.msu.edu/media/CAS%20Summer%20Data%20Camp%20Session%201%20Day%201%20(Part%20One)/1_17hs2m6g
+Day One (Part Two): https://mediaspace.msu.edu/media/CAS%20Summer%20Data%20Camp%20Session%201%20Day%201%20(Part%20Two)/1_738pnrtr
+Day Two (Part One):
+Day Two (Part Two):
+Day Three (Part One):
+Day Three (Part Two):
+
 
 ## Schedule:
 
