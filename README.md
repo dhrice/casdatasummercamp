@@ -55,8 +55,8 @@ RStudio is a free software that uses R in a more appealing and easier to underst
 Session One 
 - Day One (Part One): https://mediaspace.msu.edu/media/CAS%20Summer%20Data%20Camp%20Session%201%20Day%201%20(Part%20One)/1_17hs2m6g
 - Day One (Part Two): https://mediaspace.msu.edu/media/CAS%20Summer%20Data%20Camp%20Session%201%20Day%201%20(Part%20Two)/1_738pnrtr
-- Day Two (Part One):
-- Day Two (Part Two):
+- Day Two (Part One): https://mediaspace.msu.edu/media/CAS%20Summer%20Data%20Camp%20Session%201%20Day%202%20(Part%20One)/1_i079qy55
+- Day Two (Part Two): https://mediaspace.msu.edu/media/CAS%20Summer%20Data%20Camp%20Session%201%20Day%202%20(Part%20Two)/1_2a3auw38
 - Day Three (Part One):
 - Day Three (Part Two):
 
