@@ -57,8 +57,8 @@ Session One
 - Day One (Part Two): https://mediaspace.msu.edu/media/CAS%20Summer%20Data%20Camp%20Session%201%20Day%201%20(Part%20Two)/1_738pnrtr
 - Day Two (Part One): https://mediaspace.msu.edu/media/CAS%20Summer%20Data%20Camp%20Session%201%20Day%202%20(Part%20One)/1_i079qy55
 - Day Two (Part Two): https://mediaspace.msu.edu/media/CAS%20Summer%20Data%20Camp%20Session%201%20Day%202%20(Part%20Two)/1_2a3auw38
-- Day Three (Part One):
-- Day Three (Part Two):
+- Day Three (Part One): https://mediaspace.msu.edu/media/CAS%20Summer%20Data%20Camp%20Session%201%20Day%203%20(Part%20One)/1_q8q41azw
+- Day Three (Part Two): https://mediaspace.msu.edu/media/CAS%20Summer%20Data%20Camp%20Session%201%20Day%203%20(Part%20Two)/1_5vcfpmbe
 
 
 ## Schedule:
