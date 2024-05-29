@@ -1,0 +1,762 @@
+---
+title: "CAS Data Summer Camp"
+output: html_notebook
+---
+### Day One
+
+Today, we will be working with R doing basic functions to get familiar with the programming language. This, initially, will be very similar to Day One where we learned about Python. You will see many of the same examples and similar codes. The idea is to draw similarities between the languages but also highlight how they are different.
+
+It can be challenging to go from Python to R and back, especially as a beginner. A lot of the language looks very similar but doesn't always work the same.
+
+Before you start in R:
+Go to Tools > Global Options > Code > Select Soft-Wrap R Source Files
+Tools > Global Options > Appearance if you want to change to a dark background or something else more appealing to you
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+### Basic Things
+There are a few different kinds of objects that we can create and use in R Similar to other languages, like Python, the kind of object dictates its behavior.
+
+- Integers are exactly what they sound like, numbers without decimal points. They are abbreviated Int.
+- Floats are integers with decimal points. If you have a float and make it an integer, the decimal disappears.
+- Strings are text. They can include numbers, decimals, symbols, whatever. But they cannot be manipulated like numbers.
+- Booleans are True or False. They are useful for using if statements and functions.
+- R uses lists, but less so things like dictionaries.
+
+R can function as a simple math tool. We can run this line in a few ways. Selecting the line (either highlighting or clicking next to it) and using command+return on a Mac or CTRL+Enter on a PC or the Run button up at the top of this window.
+
+Using the "Play" button at the far right of the code chunk will run the commandm but the Play button will also run the entire code chunk.
+```{r}
+2+3 
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+#### Practice
+Add a new chunk right below this line and put 42 - 12 in it and run the code.
+
+
+### Basic Math
+Just like Python, R can function as a calculator.
+```{r}
+2 + 3
+
+4 - 5
+
+5 * 6
+
+5 / 4.5
+
+16^2
+
+6 - 5 + 2
+
+6 - (5 + 2)
+
+2 / 8 - 4
+
+2 / (8 - 4)
+```
+
+Storing data. Note here that you can use <- or =. I recommend not using = as you will sometimes use that in code and it can get confusing.
+```{r}
+a <- 5
+
+a
+```
+
+```{r}
+b = 6
+b
+```
+
+Objects in R must start with a letter and only contain letters, numbers, or an underscore.
+```{r}
+t1 <- 1000
+
+t-2 <- 1000
+
+b_9 <- 1000
+
+1x <- 1000 # Note the little red circle with an x in it. It is telling you something is wrong with this line.
+```
+
+We can also work with objects that have values.
+```{r}
+a <- 15
+
+a
+
+a + 5
+
+16 - a
+
+b <- 12
+
+a - b
+```
+
+We can also check what an object is using typeof(). By default, R will say that integers like 5 are doubles (or floats). Alternatively, you can put an L next the number (for literal). This isn't really an issue as much as it is in Python.
+```{r}
+a <- 5
+
+typeof(a)
+
+b <- 5.0
+
+typeof(b)
+
+class(a)
+
+class(b)
+
+typeof(5L)
+```
+
+Strings work similarly to Python. We indicate a string using quotes, single or double (try and stick to double).
+```{r}
+"Go Green!"
+
+a <- "Go White!"
+
+a
+
+typeof(a)
+
+firstName <- "Dan"
+lastName <- "Rice"
+
+firstName
+
+lastName
+```
+
+#### Practice
+
+Look at the code chunk below and follow the commented instructions.
+```{r}
+# Add 5 and 9 together
+
+
+# Create an object called X that is equal to 14
+
+
+# Subtract 42 from 1234
+
+
+# Create an object that is equal to 62 divided by the sum of 8 and 4.6
+
+
+# Create an object equal to your name
+
+
+# Check the type of any of the objects you created
+
+
+```
+
+We can also concatenate strings, but we use paste() for that. Paste defaults to a space between items. Concatenation in R works differently than Python.
+```{r Concatenating Strings}
+# Note the name change on the chunk above.
+paste("a","b")
+
+paste(firstName,lastName)
+
+paste(firstName,lastName, sep = "-")
+
+paste(firstName,lastName, sep = "")
+
+name <- paste(firstName,lastName)
+
+name
+```
+
+We do not need to specify as a string when pasting numbers and strings.
+```{r}
+paste(5,"a")
+
+paste(5,6,7,8)
+
+paste("a","b",3,4, sep = "-")
+
+strPaste <- paste("a","b",3,4, sep = "-")
+
+strPaste
+
+typeof(strPaste)
+```
+
+Pasting together creates string. This is really useful if you wanted to use a for loop to batch rename CSV files, for instance. R also allows us to concatenate things together, which creates individual items in a vector. We use c() to accomplish this.
+```{r}
+a <- c("a","b","c")
+
+a
+
+strPaste
+
+b <- c(1,2,3,4,'c')
+
+b
+```
+
+Vectors like what we just made have index positions and could be iterated over.
+```{r}
+a <- c(1,2,3,4,5,6,7,8,9,10)
+
+a
+
+a[1]
+```
+
+There are also containers in R. We are going to look at lists first using list()
+```{r}
+myList <- list(1,2,3,4,5)
+
+myList
+
+newList <- list(1,2,3,"hat","car",6)
+
+newList
+```
+
+Lists contain index positions, starting at 1, that we can then use to subset the list.
+```{r}
+myList <- list(1,2,4,5,6)
+
+myList[1]
+
+myList[[1]]
+```
+
+Lists can be added to, modified, and reduced using our [] function.
+```{r}
+myList <- list(1,2,3,4,5,6)
+
+myList[7] <- 7
+
+myList
+
+myList[1] <- "One"
+
+myList
+```
+
+Dropping items in our list is not sticky unless we save our object as itself (save in Word) or save it as a different object (save as in Word)
+```{r}
+myList <- list(1,2,3,4,5,6)
+
+myList[-2]
+myList
+
+myList <- myList[-2]
+myList
+
+myList <- myList[-2]
+myList
+
+myList <- list(1,1,1,2,2,2)
+
+myList <- myList[myList != 1]
+
+myList
+```
+
+Lists can be sorted and combined as well.
+```{r}
+myList <- c(34, 47, 25, 14)
+
+sort(myList)
+
+sort(myList, decreasing = TRUE)
+
+myList1 <- list(1,2,3,4,5,6)
+
+myList2 <- list("a","b","c","d","e","f")
+
+myNewlist <- c(myList1,myList2)
+
+myNewlist
+```
+
+#### Practice
+Do the following practice problems on lists
+```{r}
+# Make a list with at least 4 objects in it.
+
+
+
+# Sort that list in reverse order.
+
+
+
+# Make a second list and combine it with the first.
+
+
+
+# Add an item to this new list.
+
+
+
+# Drop an item from this list.
+```
+
+You can clear your workspace in a couple ways. There is a little broom icon above the Global Environment on the far right of the UI. That will get rid of everything. We can also use the command below to clear our workspace. This will get rid of everything in the Global Environment so do not run in lightly. It is typically best to have this at the start of your script and then never again. We are flagrantly breaking that rule right now.
+```{r}
+rm(list=ls())
+```
+
+R also uses dictionaries which are key-value pairings. We use c() to start our dictionary, and then put the key : value that we want. Keys must be strings.
+```{r}
+sounds <- c("cat"="meow", "dog"="woof", "horse"="neigh")
+
+sounds
+
+typeof(sounds)
+
+numbers <- c("one" = 1, "two" = 2, "three" = 3, "four" = 4)
+
+numbers
+
+numbers <- c("one" = 1, "two" = 2, "three" = 3, 4 = 4)
+
+numbers
+
+```
+
+We can also add to our dictionary. or extract the value of the key.
+```{r}
+sounds <- c("cat"="meow", "dog"="woof", "horse"="neigh")
+
+sounds
+
+sounds["cow"] <- "moo"
+
+sounds
+
+sounds['cat']
+
+cat_sound <- sounds["cat"]
+
+cat_sound
+```
+
+Finally, we can use dictionaries and do math or other functions on the values.
+```{r}
+fruitCount = c("apples"=4,"lemons"=3)
+
+fruitPrices = c("apples"=1.95, "lemons"=1.29)
+
+fruitCount
+
+fruitPrices
+
+fruitCount['apples'] * fruitPrices['apples']
+
+x <- fruitCount['apples'] * fruitPrices['apples']
+
+x
+
+x1 <- as.numeric(fruitCount['apples'] * fruitPrices['apples'])
+
+x1
+```
+
+#### Practice
+Do the following practice problems.
+```{r}
+# Create a 3-item dictionary.
+
+
+
+# Create a 2-item dictionary with numbers for both values.
+
+
+
+# Create another 2-item dictionary with numbers for values and multiply one value from the other 2-item dictionary with this one. The keys do not need to match.
+
+
+```
+
+### For Loops
+Looping means iterating over a number of things in a list, container, dataframe, etc. Basically when we want to run the same code on multiple things, we can use a loop. The format of looping is for each thing in a listing of the same thing, do these commands on it.
+
+```{r}
+myList <- c(5,43,1,78,"hat")
+print(myList[1])
+print(myList[2])
+print(myList[3])
+print(myList[4])
+print(myList[5])
+```
+
+```{r}
+for (i in myList) {
+  print(i)
+}
+
+a <- seq(0,40, by=5)
+
+for (i in a) {
+  print(i)
+}
+
+a <- c("a","b","c")
+
+for (i in a) {
+  print(i)
+}
+```
+
+We can also update the values of a list using our index subset[].
+```{r}
+myList <- c(1,2,3,4,5,6)
+
+for (i in 1:length(myList)) {
+  myList[i] <- myList[i]+5
+}
+
+myList
+
+list2 <- c(365,123,752,123,463,123)
+
+for (i in 1:length(list2)) {
+  list2[i] <- list2[i]-600
+}
+
+list2
+
+list3 <- c(1:64)
+
+list3
+
+for (i in 1:length(list3)) {
+  list3[i] <- list3[i] - mean(list3)
+}
+
+list3
+```
+
+Looping with a dictionary is a little different. A simple loop with print the value. Adding names() will print the keys.
+```{r}
+sounds <- c(
+  "cat"="meow",
+  "dog"="woof",
+  "horse"="neigh"
+)
+
+for (i in sounds){
+  print(i)
+}
+
+for (i in names(sounds)){
+  print(i)
+}
+```
+
+#### Practice
+```{r}
+# Create a list with 5 numeric objects. Write a loop to divide each one by 4 and print the result.
+
+
+
+# Print each item in this list.
+myText <- c("you","cannot","illegally","keep","nuclear","secrets","without","going","to","jail")
+
+
+
+# Challenge: Use a loop and change the value of each item in the list provided by squaring it.
+numList = list(1,3,5,62,4,7,23,6,42)
+
+
+```
+
+### If/Else
+If statements are used to check a condition and, if met, do something.
+```{r}
+x <- 5
+
+if (x > 4) {
+  print("Bigger!")
+}
+
+x <- 14
+
+if (x < 21) {
+  print("Smaller!")
+}
+
+x <- 43
+
+if (x == 43) {
+  print("X is 43!")
+}
+
+x <- "hat"
+
+if (x == "hat") {
+  print("hat!")
+}
+
+x <- 5
+
+if (x >= 5) {
+  print("x is at least 5!")
+}
+```
+
+We can also use else to nest other evaluations.
+```{r}
+x <- 65
+
+if (x > 50) {
+  print("50")
+} else if (x < 20){
+  print("20")
+}
+
+x <- 19
+
+if (x > 50) {
+  print("50")
+} else if (x < 20){
+  print("20")
+}
+
+x <- 45
+
+if (x > 50) {
+  print("50")
+} else if (x < 20){
+  print("20")
+}
+
+x <- 45
+
+if (x > 50) {
+  print("50")
+} else if (x < 20){
+  print("20")
+} else {
+  print(x)
+}
+```
+
+#### Practice
+
+```{r}
+# Write an if statement that checks if x is greater than 1204. If it is, print a message.
+x = 5234
+
+
+
+# Write an if/else statement that checks if x is less than 341. If yes, print a message, if not print a different message.
+x = 22*15
+
+
+
+# Using if/else if/else, print a message if x is greater than 55, a different one if it is less than 55, and a final one if it is equal to 55.
+x = 24 - 9 +12 * 4 - 8
+
+
+
+# Use an if/else statement to evaluate if the numbers in the list below are greater than the object "check" that is also below. If they are, print "BIGGER!"
+check = 4
+numList = list(1,3,5,62,4,7,23,6,42)
+
+
+```
+
+### Working With Data
+There are a lot of different ways we can create and work with data in R. Some of this we did above, some is new.
+```{r}
+rm(list=ls())
+
+a <- c(1,2,3,4)
+a
+
+b <- c(1:4)
+b
+
+c <- seq(0,10, by=.2) #try changing the by value
+c
+
+d <- matrix(data = seq(1:20), nrow = 5)
+d
+```
+
+That last object, d, is a matrix which looks really similar to an Excel sheet. While useful, there are some differences between a matrix and an Excel file. As a result, the most common tyep of data that you likely will deal with is a dataframe which is like a matrix but does not need to be homogenous like a matrix does.
+```{r}
+rm(list=ls())
+
+a <- matrix(rexp(200, rate=.1), ncol=5)
+
+df <- as.data.frame(a)
+df
+```
+
+Once we have a dataframe, we can do a lot of things with it.
+```{r}
+head(df)
+
+summary(df)
+
+min(df)
+
+max(df)
+```
+
+We can also look at specific columns using the $.
+```{r}
+df$V1
+
+head(df$V1)
+
+summary(df$V1)
+
+table(df$V1)
+
+min(df$V1)
+
+max(df$V1)
+```
+
+Or rename columns. We need to be careful when doing that as how we name columns can make calling them more difficult.
+```{r}
+colnames(df) <- c("Col1", "Col2", "Col3", "Col4", "Col5")
+df
+colnames(df)
+
+colnames(df) <- c("Col1", "Col2", "Third Col", 4, "Col5")
+df
+colnames(df)
+
+df$Col1
+
+df$`Third Col`
+
+df$4
+
+df$`4`
+
+colnames(df) <- c("Col1", "Col2", "Third_Col", "four", "Col5")
+
+df$Col1
+
+df$Third_Col
+
+df$four
+```
+
+Adding and removing data is relatively straightforward. We can add new columns by just giving them a name and setting them equal to a value. Dropping requires us to either save or save as the object.
+```{r}
+df <- as.data.frame(matrix(rexp(200, rate=.1), ncol=5))
+
+colnames(df) <- c("Col1", "Col2", "Col3", "Col4", "Col5")
+
+head(df)
+
+df["Col6"] <- 1
+
+df$Col6
+
+df[-6]
+
+df
+
+df <- df[-6]
+
+df
+
+df["Add"] <- df$payatt + df$changemind
+
+df$Add
+
+```
+
+
+### Working with Data
+We are doing to bring in the sav.csv file.
+```{r}
+rm(list=ls())
+
+df <- read.csv("sav.csv", sep = ',', header = T)
+
+head(df)
+
+summary(df)
+
+table(df$payatt)
+```
+
+Changing values in R is rather simple.
+```{r}
+df$payatt[df$payatt>4] <- NA 
+
+table(df$payatt)
+
+table(df$payatt, useNA = "always")
+```
+
+```{r}
+table(is.na(df))
+
+table(is.na(df$payatt))
+
+df[df==99] <- NA
+
+summary(df)
+```
+
+This does create issues for us if we are then adding.
+```{r}
+df$added <- df$payatt + df$changemind
+
+table(df$added, useNA = "always")
+
+df$new <- rowSums(df[,c("payatt", "changemind")], na.rm=TRUE)
+
+table(df$new, useNA = "always")
+table(df$added, useNA = "always")
+
+```
+
+#### Practice
+```{r}
+# Read in the pewfuture.csv file. Be sure to save it as an object.
+
+
+
+# Look at the header of the object.
+
+
+
+#How many rows are in the data? You can see this in the global environment.
+
+
+
+# Are there any missing values?
+
+
+
+# Add a column to your data.
+
+
+
+# Create a new column that is the sum of two columns.
+
+
+
+# Remove a column.
+
+
+
+# Set some values in any column equal to a different value (could be NA, could be a different number)
+
+
+
+```
+
