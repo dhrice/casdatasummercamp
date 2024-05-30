@@ -1,0 +1,720 @@
+---
+title: "CAS Data Summer Camp"
+output: html_notebook
+---
+## Session Two Day Two
+Today we are going to do more work with data files as well as modeling and visualizing data.
+
+### Working with Data
+
+Read in the car emissions dataset.
+```{r}
+df <- read.csv("caremissions.csv")
+
+head(df,2)
+
+summary(df)
+```
+Look at some of the values in it.
+```{r}
+table(df$company)
+
+table(df$fuel)
+
+table(df$number)
+
+table(df$ob.fuel)
+```
+### Basic statistics
+```{r}
+mean(df$ob.fuel)
+
+median(df$ob.fuel)
+
+x <- mean(df$ob.fuel)
+
+round(mean(df$ob.fuel))
+
+round(mean(df$ob.fuel), 4)
+
+sd(df$ob.fuel)
+
+cor(df$ob.fuel,df$wl.fuel)
+
+cor.test(df$ob.fuel,df$wl.fuel)
+
+mean(df$ob.fuel[df$company=="KIA"])
+
+median(df$wl.co2[df$fuel=="DIESEL"])
+```
+
+What about when there are missing data?
+```{r}
+table(df$ob.fuel)
+df$ob.fuel[df$ob.fuel<5] <- NA
+table(df$ob.fuel, useNA = "always")
+
+mean(df$ob.fuel)
+
+mean(df$ob.fuel, na.rm = T)
+
+df <- read.csv("caremissions.csv")
+```
+
+
+
+#### Practice
+```{r}
+# Find the mean of gap.fuel
+
+# What is the median of wl.co2 minus the mean of wl.co2?
+
+# Create a new column that is the ratio of gap.fuel and gap.co2
+
+```
+
+### Data Manipulation
+```{r}
+df[1,1]
+
+df[1,2]
+
+df[5,3]
+
+df1 <- df[1,1]
+
+df1 <- df[4,5]
+
+df1 <- df[,c(1,2)]
+
+df1 <- df[c(1,2),]
+
+df1 <- df[c(1:40),c(1,2,3,4)]
+```
+
+More ways to subset data.
+```{r}
+df1 <- subset(df, company=="KIA")
+
+df1 <- subset(df, ob.fuel > 10)
+
+x <- mean(df$ob.fuel)
+
+df1 <- subset(df, ob.fuel > x)
+
+df1 <- subset(df, ob.fuel > mean(df$ob.fuel))
+```
+
+#### Practice
+```{r}
+# Create a new data frame that is just Ford vehicles. You might need to use table() to figure out how Ford is listed in the data.
+
+# Create a new dataset of just Volvo cars.
+
+# Create a new dataset that is just DIESEL cars.
+
+# What is the mean of OB fuel for just PETROL/ELECTRIC cars?
+
+```
+
+
+### Data Handling
+```{r}
+rm(list=ls())
+df <- read.csv("salaries.csv", header = T)
+head(df)
+
+colnames(df) <- c("Rk","Player","Tm","x23","x24","x25","x26","x27","x28","Guaranteed")
+
+head(df)
+
+typeof(df$x23)
+
+df$x23 <- gsub(",","",df$x23)
+
+head(df$x23)
+
+df$x23 <- gsub("$","",df$x23)
+
+head(df$x23)
+
+df$x23 <- gsub("\\$","",df$x23)
+
+df$x23
+
+head(df$x24)
+
+df$x24 <- gsub("$","",df$x24, fixed = T)
+
+head(df$x24)
+
+typeof(df$x23)
+
+df$x23 <- as.numeric(df$x23)
+
+head(df$x23)
+
+typeof(df$x23)
+```
+
+Batch processing
+```{r}
+rm(list=ls())
+df <- read.csv("salaries.csv", header = T)
+colnames(df) <- c("Rk","Player","Tm","x23","x24","x25","x26","x27","x28","Guaranteed")
+head(df)
+
+colnames(df)
+
+salCols <- c("x23","x24","x25","x26","x27","x28","Guaranteed")
+
+for (i in salCols) {
+  df[,i] <- gsub(",","",df[,i])
+  df[,i] <- gsub("$","",df[,i], fixed = T)
+  df[,i] <- as.numeric(df[,i])
+}
+head(df)
+
+summary(df)
+
+for (i in salCols) {
+  print(paste("Average salary in",i,"is",round(mean(df[,i], na.rm = T), 2)))
+}
+```
+### Combining Data
+There are generally speaking 3 ways to combine data in R. cbind, rbind, and merge. cbind puts datasets next to one another. You need to be extremely careful with cbind because it defaults to fill data from both binded datasets.
+```{r}
+rm(list=ls())
+df1 <- data.frame(Name = c('a1', 'a2', 'a3', 'b1', 'b2', 'b3'), data1 = 0:5)
+df2 <- data.frame(Name = c('c1', 'c2', 'c3', 'd1', 'd2', 'd3'), data2 = 6:11)
+
+df3 <- cbind(df1,df2)
+
+df4 <- data.frame(Name = c('a1', 'a2', 'a3', 'b1', 'b2', 'b3'), data1 = 0:5)
+df5 <- data.frame(Name = c('c1', 'c2', 'c3'), data2 = 6:8)
+
+df6 <- cbind(df4,df5)
+```
+
+rbind just puts datasets on top of one another. Columns must match
+```{r}
+rm(list=ls())
+df1 <- data.frame(Name = c('a1', 'a2', 'a3', 'b1', 'b2', 'b3'), data1 = 0:5)
+df2 <- data.frame(Name = c('c1', 'c2', 'c3', 'd1', 'd2', 'd3'), data1 = 6:11)
+
+df3 <- rbind(df1,df2)
+
+df4 <- data.frame(Name = c('a1', 'a2', 'a3', 'b1', 'b2', 'b3'), data1 = 0:5)
+df5 <- data.frame(Name = c('c1', 'c2', 'c3'), data1 = 6:8)
+
+df6 <- rbind(df4,df5)
+
+df7 <- data.frame(Name = c('a1', 'a2', 'a3', 'b1', 'b2', 'b3'), data1 = 0:5,data2 = 54:59)
+df8 <- data.frame(Name = c('c1', 'c2', 'c3', 'd1', 'd2', 'd3'), data1 = 6:11)
+
+df10 <- rbind(df7,df8)
+```
+
+Merging requires a shared columnn name or you can define a column you want to merge on.
+```{r}
+rm(list=ls())
+df1 <- data.frame(Name = c('a1', 'a2', 'a3', 'b1', 'b2', 'b3'), data1 = 0:5)
+df2 <- data.frame(Name = c('a1', 'a2', 'a3', 'c1', 'c2', 'c3'), data2 = 6:11)
+
+df3 <- merge(df1,df2)
+
+df4 <- data.frame(Name = c('a1', 'a2', 'a3', 'b1', 'b2', 'b3'), data1 = 0:5)
+df5 <- data.frame(Name = c('a1', 'a2', 'a3'), data2 = 6:8)
+
+df6 <- merge(df4,df5)
+
+df7 <- data.frame(Name = c('a1', 'a2', 'a3', 'b1', 'b2', 'b3'), data1 = 0:5, data2 = 6:11, data3 = 12:17)
+df8 <- data.frame(Name = c('a1', 'a2', 'a3', 'b1', 'b2', 'b3'), data1 = 0:5, data2 = 18:23, data3 = 12:17)
+
+df9 <- merge(df7,df8)
+
+df9 <- merge(df7,df8, by = "Name")
+
+df7 <- data.frame(Name = c('a1', 'a2', 'a3', 'b1', 'b2', 'b3'), data1 = 0:5, data2 = 6:11, data3 = 12:17)
+df8 <- data.frame(ID = c('a1', 'a2', 'a3', 'b1', 'b2', 'b3'), data4 = 0:5, data5 = 18:23, data6 = 12:17)
+
+df9 <- merge(df7,df8, by.x = "Name", by.y = "ID")
+
+df7 <- data.frame(Name = c('a1', 'a2', 'a3', 'b1', 'b2', 'b3'), data1 = 0:5, data2 = 6:11, data3 = 12:17)
+df8 <- data.frame(ID = c('a1', 'a2', 'a3', 'c1', 'c2', 'b3'), data4 = 0:5, data5 = 18:23, data6 = 12:17)
+
+df9 <- merge(df7,df8, by.x = "Name", by.y = "ID")
+
+df7 <- data.frame(Name = c('a1', 'a2', 'a3', 'b1', 'b2', 'b3'), data1 = 0:5, data2 = 6:11, data3 = 12:17)
+df8 <- data.frame(ID = c('a1', 'a2', 'a3', 'c1', 'c2', 'b3'), data4 = 0:5, data5 = 18:23, data6 = 12:17)
+
+df9 <- merge(df7,df8, by.x = "Name", by.y = "ID", all = T)
+```
+
+### Grouping
+We can use the aggregate feature to group our data into smaller chunks.
+```{r}
+rm(list=ls())
+df <- read.csv("salaries.csv", header = T)
+colnames(df) <- c("Rk","Player","Tm","x23","x24","x25","x26","x27","x28","Guaranteed")
+salCols <- c("x23","x24","x25","x26","x27","x28","Guaranteed")
+for (i in salCols) {
+  df[,i] <- gsub(",","",df[,i])
+  df[,i] <- gsub("$","",df[,i], fixed = T)
+  df[,i] <- as.numeric(df[,i])
+}
+
+a <- aggregate(Guaranteed ~ Tm, data = df, FUN = "mean")
+
+mean(df$Guaranteed[df$Tm=="DET"])
+
+b <- aggregate(Guaranteed ~ Tm, data = df, FUN = "sum")
+
+c <- aggregate(x23 ~ Tm, data = df, FUN = "mean")
+
+d <- aggregate(Player ~ Tm, data = df, FUN = "length")
+
+```
+
+### Modeling in R
+Modeling in R is also very straightforward for simple models.
+```{r}
+rm(list=ls())
+A <- read.csv("sav.csv", sep = ',', header = T)
+A[A==99] <- NA
+summary(A)
+
+lm(payatt ~ changemind, data = A)
+
+summary(lm(payatt ~ changemind, data = A))
+
+summary(lm(engagepol ~ seepol, data = A))
+
+model1 <- lm(payatt ~ changemind + seepol, data = A)
+
+summary(model1)
+
+model1$coefficients
+
+model2 <- lm(A$payatt ~ A$changemind * A$seepol)
+
+summary(model2)
+```
+
+We can also do things like categorical modeling or logistic regression.
+```{r}
+letters_set <- c("a","b","c","d")
+value_set <- c(1,2,3,4)
+random_letters <- sample(letters_set, 50, replace = TRUE)
+random_values <- sample(value_set, 50, replace = TRUE)
+data <- data.frame(id = random_letters, score = random_values)
+data$id <- as.factor(data$id)
+head(data)
+
+summary(lm(score ~ id, data = data))
+
+levels(data$id)
+
+data$id <- relevel(data$id, ref = "c")
+
+summary(lm(score ~ id, data = data))
+```
+
+```{r}
+rm(list=ls())
+score_set <- runif(500, min = 1, max = 5)
+value_set <- c(0,1)
+random_values <- sample(value_set, 500, replace = TRUE)
+data <- data.frame(value = random_values, score = score_set)
+head(data)
+
+summary(glm(value ~ score, data = data, family = "binomial"))
+```
+
+### Showing Our Models
+We can use a package, something we haven't had to do yet, to get our models out into workable text.
+```{r}
+install.packages("modelsummary")
+install.packages("pandoc")
+library(modelsummary)
+
+rm(list=ls())
+A <- read.csv("sav.csv", sep = ',', header = T)
+A[A==99] <- NA
+summary(A)
+
+# Save your models as objects
+m1 <- lm(payatt ~ changemind, data = A)
+m2 <- lm(payatt ~ seepol, data = A)
+m3 <- lm(payatt ~ engagepol, data = A)
+
+# Create a list of your models with labels for each one
+models <- list(
+  "Change Minds" = m1,
+  "See Politics" = m2,
+  "Engage Politics" = m3
+)
+
+modelsummary(models)
+
+modelsummary(models, estimate = "{estimate} {stars}")
+
+modelsummary(models, estimate = "{estimate} [{conf.low}, {conf.high}, {stars}]")
+
+modelsummary(models, estimate = "{estimate} {stars}", coef_rename = c("changemind" = "Change Mind", "seepol" = "See Politics"))
+
+modelsummary(models, estimate = "{estimate} {stars}", coef_rename = c("changemind" = "Change Mind", "seepol" = "See Politics", "engagepol" = "Engage Politics"), output = "models.docx")
+```
+
+### Plotting
+There is a lot you can do with plotting. This is a basic overview of the options.
+```{r}
+rm(list=ls())
+df <- read.csv("caremissions.csv", sep = ',', header = T)
+
+plot(df$ob.fuel,df$wl.fuel)
+
+# Markdown or Notebooks in R are a little different from plots because you need to do everything all at once.
+plot(df$ob.fuel,df$wl.fuel)
+title("Onboard Fuel Economy vs. Tested Fuel Economy")
+
+# We can get around this by nesting our plot calls inside of a {}
+{
+  plot(df$ob.fuel,df$wl.fuel)
+  title("Onboard Fuel Economy vs. Tested Fuel Economy")
+}
+
+```
+```{r}
+{
+  plot(df$ob.fuel, df$wl.fuel, xlab = "Onboard Fuel", ylab = "Measured Fuel")
+  title("Onboard Fuel Economy vs. Tested Fuel Economy")
+}
+
+summary(df$ob.fuel)
+summary(df$wl.fuel)
+
+{
+  plot(df$ob.fuel, df$wl.fuel, xlab = "Onboard Fuel", ylab = "Measured Fuel", axes = F)
+  title("Onboard Fuel Economy vs. Tested Fuel Economy")
+  axis(1, at = seq(0,22, by = 2))
+  axis(2, at = seq(0,16, by = 2), las = 1)
+}
+
+{
+  plot(df$ob.fuel, df$wl.fuel, xlab = "Onboard Fuel", ylab = "Measured Fuel", axes = F, xlim = c(0,22), ylim = c(0,16))
+  title("Onboard Fuel Economy vs. Tested Fuel Economy")
+  axis(1, at = seq(0,22, by = 2))
+  axis(2, at = seq(0,16, by = 2), las = 1)
+}
+```
+
+### Text Modeling
+
+```{r}
+library(stringr)
+rm(list=ls())
+
+A <- read.csv("transcripts.csv")
+summary(A)
+table(A$president)
+```
+
+We need to be careful how we ask R to look at text.
+```{r}
+A$apple1 <- grepl("apple", A$transcript)
+table(A$apple1)
+
+A$apple2 <- grepl("apple", A$transcript, ignore.case = TRUE)
+table(A$apple2)
+
+table(A$apple1,A$apple2)
+```
+
+```{r}
+A$freedom <- str_count(A$transcript, "freedom")
+A$liberty <- str_count(A$transcript, "liberty")
+A$rights <- str_count(A$transcript, "rights")
+A$military <- str_count(A$transcript, "military")
+
+sum(A$freedom,A$liberty,A$rights,A$military)
+
+countwords <- c('freedom','liberty','rights',"military")
+
+A$count <- 0
+A$patriotismWords <- 0
+
+for (i in countwords) { 
+  A$count <- str_count(A$transcript, i)
+  A$patriotismWords <- A$patriotismWords + A$count
+  #print(paste("There are:",A$count,"instances of",i,"and the total words so far is:",A$patriotismWords,"in that row.", sep = " "))
+  A$count <- 0
+}
+table(A$patriotismWords)
+
+sum(A$patriotismWords)
+
+# This is another way to remove objects, just one at a time or with a list.
+rm(i)
+rm(countwords)
+```
+
+### Modeling Patriotism Words
+```{r}
+summary(lm(patriotismWords ~ president, data = A))
+
+A$nums <- length(A$date):1 # this creates a chronological numbering system with row 1 starting at 244 and working its way down to 1.
+
+summary(lm(patriotismWords ~ nums, data = A))
+```
+
+```{r}
+A$year <- as.numeric(format(as.Date(A$date, format="%Y-%m-%d"),"%Y"))
+
+table(A$year)
+
+summary(lm(patriotismWords ~ year, data = A))
+```
+
+```{r}
+B <- read.csv("presidentparty.csv")
+head(B)
+
+C <- merge(A, B, by.x = "president",by.y = "President", all.x = T)
+
+table(C$Party, useNA = "always")
+
+table(B$Party, useNA = "always")
+
+B$Party <- trimws(B$Party, which = "both")
+
+table(B$Party, useNA = "always")
+```
+```{r}
+table(C$president[is.na(C$Party)])
+
+table(B$President)
+
+B$President[B$President=="Bill Clinton"] <- "William J. Clinton"
+
+B$President[B$President=="George H. W. Bush"] <- "George Bush"
+B$President[B$President=="Gerald Ford"] <- "Gerald R. Ford"
+B$President[B$President=="Martin Van Buren"] <- "Martin van Buren"
+
+C <- merge(A, B, by.x = "president",by.y = "President", all.x = T)
+
+table(C$Party, useNA = "always")
+
+table(C$president[is.na(C$Party)])
+
+C$Party[C$president=="Donald J. Trump"] <- "Republican"
+
+table(C$Party, useNA = "always")
+```
+
+```{r}
+summary(lm(patriotismWords ~ Party, data = C))
+
+C$Party <- as.factor(C$Party)
+
+C$Party <- relevel(C$Party, ref = "Democratic-Republican")
+
+summary(lm(patriotismWords ~ Party, data = C))
+
+t.test(C$patriotismWords[C$Party=="Democratic"],C$patriotismWords[C$Party=="Republican"])
+```
+```{r}
+plot(C$nums,C$patriotismWords)
+
+plot(C$year,C$patriotismWords, type = "l")
+
+C <- C[order(C$date),]
+
+plot(C$year,C$patriotismWords, type = "l")
+```
+
+```{r}
+
+# We could add some vertical lines where the US declared war that year to see if there might be a relationship.
+{
+  plot(C$year, C$patriotismWords, type = "l")
+abline(v = 1812)
+abline(v = 1846)
+abline(v = 1898)
+abline(v = 1898)
+abline(v = 1941)
+abline(v = 1990)
+}
+
+{
+  plot(C$year, C$patriotismWords,
+     type = "l",
+     col = "dodgerblue",
+     lwd = 2
+)
+}
+
+{
+  plot(C$year, C$patriotismWords,
+     type = "l",
+     col = "dodgerblue",
+     lwd = 2,
+     las = 1,
+     main="Percentage of Patriotism Words in SOTU", 
+     xlab="Year of Speech",
+     ylab=""
+)
+}
+
+summary(C$year)
+summary(C$patriotismWords)
+{
+  plot(C$year, C$patriotismWords,
+     type = "l",
+     col = "dodgerblue",
+     lwd = 2,
+     las = 1,
+     main="Percentage of Patriotism Words in SOTU", 
+     xlab="Year of Speech",
+     ylab="",
+     axes = F
+)
+  axis(1, at=seq(1790,2018,by=8), las = 2)
+axis(2, at=seq(0,150,by=25),las=1)
+abline(lm(C$patriotismWords ~ C$year), 
+       col = "black", 
+       lwd = 2
+)
+}
+
+C$color <- "darkgray"
+C$color[C$Party=="Democratic"] <- "dodgerblue"
+C$color[C$Party=="Republican"] <- "firebrick"
+
+table(C$Party,C$color)
+
+{
+plot(C$year, C$patriotismWords,
+     type = "p",
+     pch = 18,
+     col = C$color,
+     lwd = 2,
+     las = 1,
+     main="Percentage of Patriotism Words in SOTU", 
+     xlab="Year of Speech",
+     ylab="",
+     axes = F
+)
+  axis(1, at=seq(1790,2018,by=8), las = 2)
+  axis(2, at=seq(0,150,by=25),las=1)
+  abline(lm(C$patriotismWords ~ C$year), 
+       col = "black", 
+       lwd = 2
+)
+}
+```
+
+```{r}
+# There are a number of different kinds of visuals we can use with our data.
+rm(list=ls())
+# Load in the Snapchat 2022 political ads database and get a basic understanding of what is in there.
+A <- read.csv("PoliticalAds.csv")
+head(A)
+summary(A)
+```
+```{r}
+# There is likely a relationship between how much a company spends and how many impressions they get, so we will check that with a cor.test()
+cor.test(A$Spend,A$Impressions)
+```
+
+```{r}
+# We can look at those variables as histograms and barplots. Histograms show the distribution of data into consistent bins, or categories. Barplots show the distribution of all of the data. For data that is skewed right or left, histograms can quickly show that because higher frequencies will be to the right(left).
+hist(A$Spend)
+hist(A$Spend, breaks = 100)
+hist(A$Impressions)
+
+barplot(A$Spend)
+barplot(A$Impressions)
+```
+
+```{r}
+# A basic plot we can do is a scatter plot. We will first just plot the spend variable and then the impressions variable
+plot(A$Spend)
+plot(A$Impressions)
+
+# We can then look at the relationship between these two variables in a plot
+plot(A$Spend,A$Impressions)
+```
+
+```{r}
+{
+plot(A$Spend, A$Impressions,
+     col = ifelse(A$CountryCode=="united states",'blue','red'),
+     las = 1,
+     pch = 20,
+     main="Relationship between Ad Spending and Impressions", 
+     xlab="",
+     ylab="",
+     axes = F,
+     ylim = c(0,25000000),
+     xlim = c(0,200000)
+)
+summary(A$Spend)
+summary(A$Impressions)
+axis(1, at=seq(0,200000,by=20000), las = 2)
+axis(2, at=seq(0,25000000,by=2500000),las=1)
+}
+```
+
+
+```{r}
+# Looks a bit better but also has some problems with the margins. We've added some color!
+{
+  plot(A$Spend, A$Impressions,
+     col = ifelse(A$CountryCode=="united states",'blue','red'),
+     las = 1,
+     pch = 20,
+     main="Relationship between Ad Spending and Impressions", 
+     xlab="",
+     ylab="",
+     axes = F,
+     ylim = c(0,25000000),
+     xlim = c(0,200000)
+)
+labX <- c("$0","$20,000","$40,000","$60,000","$80,000","$100,000","$120,000","$140,000","$160,000","$180,000","$200,000")
+labY <- c("0","2,500,000","5,000,000","7,500,000","10,000,000","12,500,000","15,000,000","17,500,000","20,000,000","22,500,000","25,000,000")
+axis(1, at=seq(0,200000,by=20000), labels = labX, las = 2)
+axis(2, at=seq(0,25000000,by=2500000), labels = labY, las = 1)
+}
+```
+
+
+```{r}
+# Margins are fixed and we can save the plot as a pdf. Also throw in a regression line.
+{
+  pdf(file = "snapchatplot.pdf")
+par(mar=c(6,6,4,2.1)) #bottom, left, right, top and their defaults are 5.1,4.1,4.1,2.1
+par(family = "serif")
+plot(A$Spend, A$Impressions,
+     col = ifelse(A$CountryCode=="united states",'blue','red'),
+     las = 1,
+     pch = 20,
+     main="Relationship between Ad Spending and Impressions", 
+     xlab="",
+     ylab="",
+     axes = F,
+     ylim = c(0,25000000),
+     xlim = c(0,200000)
+)
+labX <- c("$0","$20,000","$40,000","$60,000","$80,000","$100,000","$120,000","$140,000","$160,000","$180,000","$200,000")
+labY <- c("0","2,500,000","5,000,000","7,500,000","10,000,000","12,500,000","15,000,000","17,500,000","20,000,000","22,500,000","25,000,000")
+axis(1, at=seq(0,200000,by=20000), labels = labX, las = 2)
+axis(2, at=seq(0,25000000,by=2500000), labels = labY, las = 1)
+abline(lm(A$Impressions ~ A$Spend), 
+       col = "black", 
+       lwd = 2
+)
+dev.off()
+}
+```
+
