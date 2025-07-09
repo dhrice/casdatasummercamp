@@ -1,11 +1,11 @@
 # Communication Arts and Sciences' Data Summer Camp
 
 ## General Information
-Big data, computational social science, programming, and machine learning are increasingly important and topical components of social science research. While all of these play a role in helping us understand a deeply digitally connected world, the skills necessary to work with them are not widely held. The College of Communication Arts and Sciences is offering a free summer camp that is specifically built to make these tools accessible to a broad audience.
+ig data, computational social science, programming, and machine learning are increasingly important and topical components of social science research. While all of these play a role in helping us understand a deeply digitally connected world, the skills necessary to work with them are not widely held. The College of Communication Arts and Sciences is offering a free summer camp that is specifically built to make these tools accessible to a broad audience.
 
-This summer camp is designed to give students, faculty, and staff hand-on knowledge of computational and programming tools. The camp is targeted towards those with little to no background in these areas. While people with strong coding skills may still benefit from the specific topics that we cover, we approach the camp from the perspective of those who know little to nothing. 
-
-The camp will cover: 
+This summer camp is designed to give students, faculty, and staff hand-on knowledge of computational and programming tools. The camp is targeted towards those with little to no background in these areas. While people with strong coding skills may still benefit from the specific topics that we cover, we approach the camp from the perspective of those who know little to nothing.
+The camp will cover:
+ 
 -	Python
 -	R
 -	Web scraping
@@ -17,24 +17,17 @@ The focus of the camp is on research, datasets, and language from the large umbr
 
 
 ## Format:
-The camp will be offered in-person and synchronously online. The online component will be run through Zoom. Scripts and files will be made available on this repo (webpage) before the start of the camp. Location is CAS 233 or on Zoom: https://msu.zoom.us/j/99575033616. The camp is scheduled for two different weeks, May 8, 9, and 10 and May 29, 30 and 31. Each day the camp will run from 9:30am until 2:30pm.
+The camp will be offered in-person and synchronously online. The online component will be run through Zoom. Scripts and files will be made available before the start of the camp. Location is TBD until we know how much space we will need. The camp is scheduled on August 11th - 15th. Each day the camp will run from 9:30am until 2:30pm. Camp is free, optional, and open to anyone affiliated with MSU. You may find that some days are of more use to you than others and attendees should come and go as they see fit.
 
 
 ## Registration: 
-Individuals are able to register with the QR code or link below. the camp is free, but registration is necessary to a) help us ensure we have a room large enough for us and b) give you access to the files needed to participate.
+Individuals are able to register with the link below. the camp is free, but registration is necessary to a) help us ensure we have a room large enough for us and b) give you access to the files needed to participate.
 
-![Untitled 1](https://github.com/dhrice/casdatasummercamp/assets/35567742/e0f16e87-5c87-48a7-bcec-ef5dcef41368)
-
-
-[https://forms.gle/89Q3Jv9RYLUvE3Xo7](https://forms.gle/pYG9mgJZyKDPHQET8)
-
-
+https://forms.gle/16NfvMWbooXUh7PA9
 
 ## Instructors: 
 
 Dr. Dan Hiaeshutter - Rice (Advertising and Public Relations)
-
-Graduate Assistant: Nan Zhang (Information and Media)
 
 ## Requirements: 
 Participants must bring a laptop and are encouraged to try installing the necessary packages before camp. Installation support will be provided during camp, and online alternatives will be available as well.
@@ -52,18 +45,7 @@ R is a programming language used for data management, statistical analysis, and 
 RStudio is a free software that uses R in a more appealing and easier to understand format. It does not perform any operations on its own, which is why you also need R, but RStudio makes the experience of using R much easier. It is available here: https://posit.co/products/open-source/rstudio/
 
 ## Recordings
-Session One 
-- Day One (Part One): https://mediaspace.msu.edu/media/CAS%20Summer%20Data%20Camp%20Session%201%20Day%201%20(Part%20One)/1_17hs2m6g
-- Day One (Part Two): https://mediaspace.msu.edu/media/CAS%20Summer%20Data%20Camp%20Session%201%20Day%201%20(Part%20Two)/1_738pnrtr
-- Day Two (Part One): https://mediaspace.msu.edu/media/CAS%20Summer%20Data%20Camp%20Session%201%20Day%202%20(Part%20One)/1_i079qy55
-- Day Two (Part Two): https://mediaspace.msu.edu/media/CAS%20Summer%20Data%20Camp%20Session%201%20Day%202%20(Part%20Two)/1_2a3auw38
-- Day Three (Part One): https://mediaspace.msu.edu/media/CAS%20Summer%20Data%20Camp%20Session%201%20Day%203%20(Part%20One)/1_q8q41azw
-- Day Three (Part Two): https://mediaspace.msu.edu/media/CAS%20Summer%20Data%20Camp%20Session%201%20Day%203%20(Part%20Two)/1_5vcfpmbe
-
-Session Two
-- Day One: https://mediaspace.msu.edu/media/CAS%20Summer%20Data%20Camp%20Session%202%20Day%201/1_yzo34pfe
-- Day Two: https://mediaspace.msu.edu/media/t/1_753v3jgm
-
+Forthcoming
 
 ## Schedule:
 
