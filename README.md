@@ -50,7 +50,7 @@ Forthcoming
 ## Schedule:
 
 <table class="table table-striped">
-  <tr> <td>Wednesday, May 8</td>  <td>9:30</td>   <td>Introduction to the Camp and Python </td> </tr>
+  <tr> <td>Monday, August 11</td>  <td>9:30</td>   <td>Introduction to the Camp and Python </td> </tr>
   <tr> <td></td>        <td>9:45</td>   <td>Jupyter and Python Basics </td> </tr>
   <tr> <td></td>        <td>10:30</td>   <td>Break</td> </tr>
   <tr> <td></td>        <td>10:40</td>   <td>Python Basics </td> </tr>
@@ -60,7 +60,7 @@ Forthcoming
   <tr> <td></td>       <td>1:40</td>    <td>Python Data Analysis </td> </tr>
   <tr> <td></td>       <td>2:30</td>    <td>Camp Ends</td> </tr> 
 
-  <tr> <td>Thursday, May 9</td><td>9:30</td>   <td>Previous day recap</td> </tr>
+  <tr> <td>Tuesday, August 12</td><td>9:30</td>   <td>Previous day recap</td> </tr>
   <tr> <td></td>       <td>10:00</td>   <td>Python Data Analysis</td> </tr>
   <tr> <td></td>       <td>11:00</td>   <td>Break </td> </tr>
   <tr> <td></td>       <td>11:10</td>   <td>Python Data Analysis </td> </tr> 
@@ -70,7 +70,7 @@ Forthcoming
   <tr> <td></td>       <td>1:40</td>   <td>Python Visualization</td> </tr>
   <tr> <td></td>       <td>2:30</td>   <td>Camp Ends</td> </tr>
  
-  <tr> <td>Friday, May 10</td><td>9:30</td>   <td>Previous day recap</td> </tr>
+  <tr> <td>Wedesday, August 13</td><td>9:30</td>   <td>Previous day recap</td> </tr>
   <tr> <td></td>       <td>10:00</td>   <td>Webscraping with Python</td> </tr>
   <tr> <td></td>       <td>11:00</td>   <td>Break </td> </tr>
   <tr> <td></td>       <td>11:10</td>   <td>Webscraping with Python </td> </tr> 
@@ -80,7 +80,7 @@ Forthcoming
   <tr> <td></td>       <td>1:40</td>   <td>Python APIs</td> </tr>
   <tr> <td></td>       <td>2:30</td>   <td>Camp Ends</td> </tr>
    
-  <tr> <td>Wednesday, May 29</td><td>9:30</td>   <td>Introduction to Camp and R</td> </tr>
+  <tr> <td>Thursday, August 14</td><td>9:30</td>   <td>Introduction to Camp and R</td> </tr>
   <tr> <td></td>       <td>10:00</td>   <td>R Basics</td> <</tr>
   <tr> <td></td>       <td>11:00</td>   <td>Break </td> </tr>
   <tr> <td></td>       <td>11:10</td>   <td>R Basics</td> </tr> 
@@ -90,7 +90,7 @@ Forthcoming
   <tr> <td></td>       <td>1:40</td>   <td>Data Analysis with R</td> </tr>
   <tr> <td></td>       <td>2:30</td>   <td>Camp Ends</td> </tr>
  
-  <tr> <td>Thursday, May 30</td><td>9:30</td>   <td>Previous day recap</td></tr>
+  <tr> <td>Friday, August 15</td><td>9:30</td>   <td>Previous day recap</td></tr>
   <tr> <td></td>       <td>10:00</td>   <td>Data Analysis with R</td> </tr>
   <tr> <td></td>       <td>11:00</td>   <td>Break </td> </tr>
   <tr> <td></td>       <td>11:10</td>   <td>Data Analysis with R</td> </tr> 
@@ -99,17 +99,6 @@ Forthcoming
   <tr> <td></td>       <td>1:30</td>   <td>Break</td> </tr>
   <tr> <td></td>       <td>1:40</td>   <td>Data Visualization with R</td> </tr>
   <tr> <td></td>       <td>2:30</td>   <td>Camp Ends</td> </tr>
-
-  <tr> <td>Friday, May 31</td><td>9:30</td>   <td>Previous day recap</td></tr>
-  <tr> <td></td>       <td>10:00</td>   <td>Data Visualization with R</td> </tr>
-  <tr> <td></td>       <td>11:00</td>   <td>Break </td> </tr>
-  <tr> <td></td>       <td>11:10</td>   <td>Machine Learning with R</td> </tr> 
-  <tr> <td></td>       <td>12:00</td>   <td>Lunch </td> </tr>
-  <tr> <td></td>       <td>12:30</td>   <td>Machine Learning with R</td> </tr>
-  <tr> <td></td>       <td>1:30</td>   <td>Break</td> </tr>
-  <tr> <td></td>       <td>1:40</td>   <td>Big Data and Big Data at MSU and Individual/Group Project Work</td> </tr>
-  <tr> <td></td>       <td>2:30</td>   <td>Camp Ends</td> </tr>
-  
 
 </table>
 
